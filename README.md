@@ -1,6 +1,7 @@
 # README
 
 Trabalho final da disciplina de Tópicos 2.
+
 Alunos: Luis Vinicius, Melque Henrique, Christina Souza.
 
 Objetivo do sistema: Rede social/fórum para mobilização de pessoas em empreendimentos sociais em suas comunidades locais.
