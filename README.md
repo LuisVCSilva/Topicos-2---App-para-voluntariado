@@ -11,6 +11,7 @@ Utilizando a engine Thredded para gerenciamento do fórum.
 Utilizando o Mercury Editor para interface WYSIWYG HTML do administrador da página.
 
 TODO IMEDIATO
+ - Documentar as estórias de usuário de maneira formal.
  - Adicionar karma
  - Integrar Mercury Editor para a página inicial (página que o admin edita para colocar sobre o que é a moblização)
  - Integrar login com API Google/Facebook/etc
