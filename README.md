@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Trabalho final da disciplina de Tópicos 2.
+Alunos: Luis Vinicius, Melque Henrique, Christina Souza.
 
-Things you may want to cover:
+Objetivo do sistema: Rede social/fórum para mobilização de pessoas em empreendimentos sociais em suas comunidades locais.
+Versão do Rails: 5.1.4
 
-* Ruby version
+Utilizando a engine Thredded para gerenciamento do fórum.
+Utilizando o Mercury Editor para interface WYSIWYG HTML do administrador da página.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TODO IMEDIATO
+ - Adicionar karma
+ - Integrar Mercury Editor para a página inicial (página que o admin edita para colocar sobre o que é a moblização)
+ - Integrar login com API Google/Facebook/etc
