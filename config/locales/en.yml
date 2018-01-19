@@ -1,14 +1,14 @@
 en:
   brand:
-    name: Mobilizaja
+    name: Mobiliza Já
   common:
-    time_ago: "%{time} ago"
+    time_ago: "%{time} atrás"
   nav:
-    edit_my_account: Edit my account
+    edit_my_account: Alterar minha conta
     forums: :thredded.nav.all_messageboards
     sign_in: :devise.shared.links.sign_in
-    sign_out: Sign out
-    theme: Theme
+    sign_out: Sair da conta
+    theme: Temas
   themes:
-    day: Day
-    night: Night
+    day: Light
+    night: Dark
