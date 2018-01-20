@@ -1,14 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Trabalho final da disciplina de Tópicos 2.
 
-Things you may want to cover:
+Alunos: Luis Vinicius, Melque Henrique, Christina Souza.
 
-* Ruby version
+Objetivo do sistema: Rede social/fórum para mobilização de pessoas em empreendimentos sociais em suas comunidades locais.
+Versão do Rails: 5.1.4
 
-* System dependencies
+Utilizando a engine Thredded para gerenciamento do fórum.
+Utilizando o Mercury Editor para interface WYSIWYG HTML do administrador da página.
 
+<<<<<<< HEAD
 * Configuration
 
 * Database creation
@@ -23,3 +25,10 @@ Things you may want to cover:
 
 * ...
 # topicos2
+=======
+TODO IMEDIATO
+ - Documentar as estórias de usuário de maneira formal.
+ - Adicionar karma
+ - Integrar Mercury Editor para a página inicial (página que o admin edita para colocar sobre o que é a moblização)
+ - Integrar login com API Google/Facebook/etc
+>>>>>>> 7c0b62392abc26070e78f34c08f6dc0ca85d4585
