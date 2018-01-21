@@ -8,6 +8,7 @@ Objetivo do sistema: Rede social/fórum para mobilização de pessoas em empreen
 Versão do Rails: 5.1.4
 
 Utilizando a engine Thredded para gerenciamento do fórum.
+Forkado aqui: https://github.com/LuisVCSilva/thredded_create_app
 Utilizando o Mercury Editor para interface WYSIWYG HTML do administrador da página.
 
 <<<<<<< HEAD
