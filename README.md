@@ -31,4 +31,3 @@ TODO IMEDIATO
  - Adicionar karma
  - Integrar Mercury Editor para a página inicial (página que o admin edita para colocar sobre o que é a moblização)
  - Integrar login com API Google/Facebook/etc
->>>>>>> 7c0b62392abc26070e78f34c08f6dc0ca85d4585
