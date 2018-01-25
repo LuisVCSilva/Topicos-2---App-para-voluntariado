@@ -1,12 +1,12 @@
--O cliente precisa de um Aplicativo/rede social que possa ser usado especificamente para mobilizar/reunir pessoas em prol de uma causa.
--Somente o administrador pode cadastrar a mobilizaÁ„o na aplicaÁ„o.
-Administrador e colaboradores podem convidar novos membros para a MobilizaÁ„o.
--Somente o administrador pode cadastrar objetivos/metas para medir o avanÁo da causa em quest„o. 
--AplicaÁ„o registra os convites por compartilhamentos feitos pelo facebook para saber por qual dos colaboradores foi feito. 
--AplicaÁ„o precisa de uma classificaÁ„o por meio de pontuaÁ„o para motivar os  colaboradores.
--Aplicativo precisa de um chat para comunicaÁ„o dos colaboradores.
--Colaboradores podem sugerir objetivos/metas para serem votados por todos os envolvidos na causa.
--Aplicativo tem que registrar postagens/ compartilhamentos/ convites para medir  em um sistema de pontuaÁ„o quanto cada colaborador se empenho na mobilizaÁ„o. 
--Colaboradores que fizer uma sugest„o que virar objetivos/metas, ganha pontos para medir o empenho na mobilizaÁ„o. 
--Aplicativo precisa de login para identificar os usu·rios pode ser por meio de cadastro por dados e e-mail ou com integraÁ„o com o facebook. 
--Colaboradores podem ver pontuaÁ„o uns dos outros na classificaÁ„o.
+- O cliente precisa de um Aplicativo que possa ser usado especificamente para mobilizar/reunir pessoas em prol de uma causa.
+- Somente o administrador pode cadastrar a mobiliza√ß√£o na aplica√ß√£o.
+- Administrador e colaboradores podem convidar novos membros para a Mobiliza√ß√£o.
+- Somente o administrador pode cadastrar objetivos/metas para medir o avan√ßo da causa em quest√£o. 
+- Aplica√ß√£o registra os convites por compartilhamentos feitos pelo facebook para saber por qual dos colaboradores foi feito. 
+- Aplica√ß√£o precisa de uma classifica√ß√£o por meio de pontua√ß√£o para motivar os  colaboradores.
+- Aplicativo precisa de um chat para comunica√ß√£o dos colaboradores.
+- Colaboradores podem sugerir objetivos/metas para serem votados por todos os envolvidos na causa.
+- Aplicativo tem que registrar postagens/ compartilhamentos/ convites para medir  em um sistema de pontua√ß√£o quanto cada colaborador se empenho na mobiliza√ß√£o. 
+- Colaboradores que fizer uma sugest√£o que virar objetivos/metas, ganha pontos para medir o empenho na mobiliza√ß√£o. 
+- Aplicativo precisa de login para identificar os usu√°rios pode ser por meio de cadastro por dados e e-mail ou com integra√ß√£o com o facebook. 
+- Colaboradores podem ver pontua√ß√£o uns dos outros na classifica√ß√£o.
