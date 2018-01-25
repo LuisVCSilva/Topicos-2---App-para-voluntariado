@@ -1,0 +1,12 @@
+-O cliente precisa de um Aplicativo/rede social que possa ser usado especificamente para mobilizar/reunir pessoas em prol de uma causa.
+-Somente o administrador pode cadastrar a mobilização na aplicação.
+Administrador e colaboradores podem convidar novos membros para a Mobilização.
+-Somente o administrador pode cadastrar objetivos/metas para medir o avanço da causa em questão. 
+-Aplicação registra os convites por compartilhamentos feitos pelo facebook para saber por qual dos colaboradores foi feito. 
+-Aplicação precisa de uma classificação por meio de pontuação para motivar os  colaboradores.
+-Aplicativo precisa de um chat para comunicação dos colaboradores.
+-Colaboradores podem sugerir objetivos/metas para serem votados por todos os envolvidos na causa.
+-Aplicativo tem que registrar postagens/ compartilhamentos/ convites para medir  em um sistema de pontuação quanto cada colaborador se empenho na mobilização. 
+-Colaboradores que fizer uma sugestão que virar objetivos/metas, ganha pontos para medir o empenho na mobilização. 
+-Aplicativo precisa de login para identificar os usuários pode ser por meio de cadastro por dados e e-mail ou com integração com o facebook. 
+-Colaboradores podem ver pontuação uns dos outros na classificação.
