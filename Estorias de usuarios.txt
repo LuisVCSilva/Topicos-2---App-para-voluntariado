@@ -1,12 +1,46 @@
-- O cliente precisa de um Aplicativo que possa ser usado especificamente para mobilizar/reunir pessoas em prol de uma causa.
-- Somente o administrador pode cadastrar a mobilização na aplicação.
-- Administrador e colaboradores podem convidar novos membros para a Mobilização.
-- Somente o administrador pode cadastrar objetivos/metas para medir o avanço da causa em questão. 
-- Aplicação registra os convites por compartilhamentos feitos pelo facebook para saber por qual dos colaboradores foi feito. 
-- Aplicação precisa de uma classificação por meio de pontuação para motivar os  colaboradores.
-- Aplicativo precisa de um chat para comunicação dos colaboradores.
-- Colaboradores podem sugerir objetivos/metas para serem votados por todos os envolvidos na causa.
-- Aplicativo tem que registrar postagens/ compartilhamentos/ convites para medir  em um sistema de pontuação quanto cada colaborador se empenho na mobilização. 
-- Colaboradores que fizer uma sugestão que virar objetivos/metas, ganha pontos para medir o empenho na mobilização. 
-- Aplicativo precisa de login para identificar os usuários pode ser por meio de cadastro por dados e e-mail ou com integração com o facebook. 
-- Colaboradores podem ver pontuação uns dos outros na classificação.
+Tipos de atores:
+
+         Membro -----------Não-Membro
+      /         \             |
+Colaborador    Admin      Observador
+
+
+- Eu como membro quero autenticar no sistema para que eu possa realizar funções de membro
+  - Informações para autenticação:
+    - Email;
+    - Senha;
+  - Sucesso na autenticação:
+    - Redirecione para a página inicial como membro da mobilização;
+  - Falha na autenticação:
+    - Retorne a página de login;
+    
+- Eu como administrador quero direcionamento para uma página para cadastrar uma Mobilização
+  - Informações para o cadastro de mobilização:
+    - Titulo;
+    - subtitulo;
+    - Descrição;
+    - Adição de uma ou mais metas/objetivos;
+      -informações para criação de Meta:
+        - Titulo;
+        - Descrição;
+    
+- Eu como administrador após a criação da Mobilização posso:
+  - Criar nova meta;
+  - Excluir meta;
+  
+
+- Uma vez que, eu como administrador criando uma meta, um topico de discussão será criado automaticamente
+  - Funções do administrador para o topicos:
+   - liberar;
+   - travar/ bloquear;
+   - Moderar Postagens;
+    
+- Eu como Membro, gerando um convite único, poderei convidar novos membros para a Mobilização;
+
+- Eu como Membro, ao visualizar um comentário posso avaliar como positivo ou negativo;
+
+- Eu como Administrador, posso atribuir pontuação ao usuário de acordo com suas contribuições;
+
+- Eu como Membro, posso visualizar a pontuação dos Membros mais ativos.
+
+- Aplicação precisa de uma classificação por meio de pontuação para motivar os  colaboradores.*
