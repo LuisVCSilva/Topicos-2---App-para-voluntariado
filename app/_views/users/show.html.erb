@@ -8,13 +8,6 @@
 <ul>
   <% if user == current_user %>
     <%= link_to t('nav.edit_my_account'), edit_user_registration_path %>
-
-    <% if user.thredded_display_name == "Admin" %>
-      |
-      <%= link_to t('nav.Editar Mobilizacao'), "/mobilizacao/index" %>
-    <% end %>
-
-
   <% end %>
   <li><%= t 'thredded.users.user_since_html', time_ago: time_ago(user.created_at) %></li>
   <% if user_detail.last_seen_at %>

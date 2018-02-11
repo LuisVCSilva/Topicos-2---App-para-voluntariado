@@ -1,0 +1,3 @@
+class Mobilizacao < ApplicationRecord
+
+end

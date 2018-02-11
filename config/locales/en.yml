@@ -1,6 +1,8 @@
 en:
   brand:
-    name: Mobiliza Já
+    name: Teste
+    subtitle: outro teste
+    description: mais teste
   common:
     time_ago: "%{time} atrás"
   nav:

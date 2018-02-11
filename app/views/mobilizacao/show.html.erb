@@ -1,0 +1,20 @@
+<%= form_tag("/mobilizacao/update", method: "post") do %>
+
+  <p hidden><%= @nome = (t'brand.name') %></p>
+  <%= label_tag(:q, "Nome da Mobilização") %>
+  <%= text_field_tag(:nomeMobilizacao, nil, :placeholder => @nome) %>
+
+  <p hidden><%= @subtitulo = (t'brand.subtitle') %></p>
+  <%= label_tag(:q, "Subtítulo") %>
+  <%= text_field_tag(:subtitulo, nil, :placeholder => @subtitulo) %>
+
+  <p hidden><%= @descricao = (t'brand.description') %></p>
+  <%= label_tag(:q, "Descrição") %>
+  <%= text_area_tag(:descricao, nil, :placeholder => @descricao) %>
+
+  <%= label_tag(:q, "Metas") %>
+
+  <br>
+  <%= submit_tag("Alterar Mobilização") %>
+<% end %>
+
