@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   resources :metas
    get "/metas/show" => "metas#show"
+   get "/metas/delete" => "metas#delete"
 
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

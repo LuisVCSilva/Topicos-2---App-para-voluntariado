@@ -4,16 +4,18 @@ require 'yaml'
 class MobilizacaoController < ApplicationController
 
   def index
-
   end
 
   def show
+   @metas = ActiveRecord::Base.connection.execute("SELECT * FROM thredded_messageboards").to_a
+
   end
 
   def edit
   end
 
   def update
+
    #Meta.create(meta_params)
    #puts "Entrei no index"
    data = YAML.load_file("#{Rails.root}/config/locales/en.yml")
@@ -21,14 +23,15 @@ class MobilizacaoController < ApplicationController
    @subtitulo = params[:subtitulo]
    @descricao = params[:descricao]
    if !@nome.to_s.empty?
-    system("sed -i 's/"+data["en"]["brand"]["name"]+"/"+@nome+"/g' \"#{Rails.root}/config/locales/en.yml\"")
+    data["en"]["brand"]["name"] = @nome.to_s
    end
-   if !@nome.to_s.empty?
-   system("sed -i 's/"+data["en"]["brand"]["subtitle"]+"/"+@subtitulo+"/g' \"#{Rails.root}/config/locales/en.yml\"")
+   if !@subtitulo.to_s.empty?
+    data["en"]["brand"]["subtitle"] = @subtitulo.to_s
    end
-   if !@nome.to_s.empty?
-   system("sed -i 's/"+data["en"]["brand"]["description"]+"/"+@descricao+"/g' \"#{Rails.root}/config/locales/en.yml\"")
+   if !@descricao.to_s.empty?
+    data["en"]["brand"]["description"] = @descricao.to_s
    end
+   File.open("#{Rails.root}/config/locales/en.yml", 'w') { |f| YAML.dump(data, f) }
    redirect_to("/")
   end
 

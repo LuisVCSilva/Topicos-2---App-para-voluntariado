@@ -1,8 +1,9 @@
+---
 en:
   brand:
     name: Teste
-    subtitle: outro teste
-    description: mais teste
+    subtitle: Outro Teste
+    description: Testes são feitos para testar
   common:
     time_ago: "%{time} atrás"
   nav:
