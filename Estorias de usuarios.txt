@@ -106,7 +106,15 @@ Complexidade = 3 - Caracteristica: Enviar convite (Observação criar funcionali
                    quando 
 ________________________________________________________________________________________________________________________________
 
-- Eu como Membro, gerando um convite único, poderei convidar novos membros para a Mobilização;
+Complexidade = 2 - Caracteristica: Avaliar Comentários
+                    Eu como Membro, ao visualizar um comentário posso avaliar como positivo ou negativo
+
+                   Cenário: Foruns
+                   Dado um Membro logado e estando dentro do forum da Mobilização
+                   Quando o Membro escolher sua avaliação (Positiva ou Negativa) para aquele comentario
+                   Então o comentario receberá um ponto positivo ou um negativo
+                   
+ ________________________________________________________________________________________________________________________________
 
 - Eu como Membro, ao visualizar um comentário posso avaliar como positivo ou negativo;
 
