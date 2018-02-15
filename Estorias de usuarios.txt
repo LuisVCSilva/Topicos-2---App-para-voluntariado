@@ -43,15 +43,43 @@ Caracteristica: logar no sistema
  
  ________________________________________________________________________________________________________________________________
     
-- Eu como administrador quero direcionamento para uma página para cadastrar uma Mobilização
-  - Informações para o cadastro de mobilização:
-    - Titulo;
-    - subtitulo;
-    - Descrição;
-    - Adição de uma ou mais metas/objetivos;
-      -informações para criação de Meta:
-        - Titulo;
-        - Descrição;
+Complexidade = 1 
+
+Característica: Alterar Mobilização
+ Cenário: 
+  - Dado que o administrador esteja logado 
+  - E na página da Mobilização,
+  - Quando clicar no perfil Admin
+  - Então ele é redirecionado para uma página de perfil do administrador
+  - Quando clica em “Editar Mobilização”
+  - E preencher Título
+  - E preencher subtitulo
+  - E preencher Descrição
+  - E de maneira opcional adicionar mais Metas da Mobilização
+  - E preenchendo o título e a descrição das Metas
+  - Então clicar no botão de “Alterar Mobilização”
+  - Então o administrador é direcionado para página inicial da mobilização
+  - E é exibida uma mensagem afirmando que as alterações foram feitas com sucesso.
+
+________________________________________________________________________________________________________________________________
+    
+Complexidade = 1 
+
+Característica: Criação de novas Metas
+ Cenário:
+  - Dado que o administrador após a criação da Mobilização
+  - Quando clica no perfil Admin,
+  - E for redirecionado para a página de perfil do administrador
+  - E clicar em “Editar Mobilização”
+  - Quando clica no botão com o símbolo de "+"
+  - Então será acrescentado novos campos de textos para preencher
+  - E preencher com o Título para Meta
+  - E preencher com a Descrição para Meta
+  - Então clicar no botão de “Alterar Mobilização”
+  - Então o administrador é direcionado para página inicial da mobilização
+  - E é exibida uma mensagem afirmando que as alterações foram feitas com sucesso.
+
+________________________________________________________________________________________________________________________________
     
 - Eu como administrador após a criação da Mobilização posso:
   - Criar nova meta;
