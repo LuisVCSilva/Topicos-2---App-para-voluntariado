@@ -125,8 +125,8 @@ Complexidade = 2 - Caracteristica: Classificar Membros
                    
 ________________________________________________________________________________________________________________________________
 
-- Eu como Administrador, posso atribuir pontuação ao usuário de acordo com suas contribuições;
+Complexidade = 2 - Eu como Membro, posso visualizar a pontuação dos Membros mais ativos.
 
-- Eu como Membro, posso visualizar a pontuação dos Membros mais ativos.
+________________________________________________________________________________________________________________________________
 
-- Aplicação precisa de uma classificação por meio de pontuação para motivar os  colaboradores.*
+Complexidade = 3 - Aplicação precisa de uma classificação por meio de pontuação para motivar os colaboradores.*
