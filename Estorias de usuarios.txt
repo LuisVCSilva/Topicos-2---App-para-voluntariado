@@ -81,9 +81,17 @@ Característica: Criação de novas Metas
 
 ________________________________________________________________________________________________________________________________
     
-- Eu como administrador após a criação da Mobilização posso:
-  - Criar nova meta;
-  - Excluir meta;
+Complexidade = 2 
+
+Característica: Criação um Tópico/Fórum para discussão
+ Cenário:
+  - Dado que o administrador criou uma meta,
+  - Então um tópico de discussão será criado automaticamente pelo Sistema
+  - E administrador poderá liberar os tópicos
+  - E poderá travar/ bloquear os tópicos
+  - E poderá Moderar as Postagens os tópicos
+  
+   -----------------------------------------------------------------------    
   
 
 - Uma vez que, eu como administrador criando uma meta, um topico de discussão será criado automaticamente
