@@ -4,7 +4,21 @@ Tipos de atores:
       /         \             |
 Colaborador    Admin      Observador
 
+Complexidade = 1 
 
+Característica: Criar login
+ Cenário:
+  - Dado um não membro estando na página inicial
+  - Quando clicar em “sign up”
+  - Então será redirecionado para página para realizar o Cadastro
+  - E preencher o campo de nome
+  - E preencher o campo de e-mail
+  - E preencher o campo de senha
+  - E Clicar no botão "sign up"
+  - Então será redirecionado para página inicial
+  - E exibirá uma mensagem que o usuário obteve sucesso 
+  
+__________________________________________________________________________________________________________________________
 - Eu como membro quero autenticar no sistema para que eu possa realizar funções de membro
   - Informações para autenticação:
     - Email;
