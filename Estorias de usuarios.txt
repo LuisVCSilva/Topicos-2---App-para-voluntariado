@@ -116,7 +116,14 @@ Complexidade = 2 - Caracteristica: Avaliar Comentários
                    
  ________________________________________________________________________________________________________________________________
 
-- Eu como Membro, ao visualizar um comentário posso avaliar como positivo ou negativo;
+Complexidade = 2 - Caracteristica: Classificar Membros
+                    Eu como Administrador, posso atribuir pontuação ao usuário de acordo com suas contribuições
+
+                   Cenário: Dado o Administrador visualizando o topico de uma meta
+                   Quando visualizar um post de um Colaborador, aparecerá a opção de pontuar o post
+                   Então o Administrador poderá pontuar o post do Colaborador
+                   
+________________________________________________________________________________________________________________________________
 
 - Eu como Administrador, posso atribuir pontuação ao usuário de acordo com suas contribuições;
 
