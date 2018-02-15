@@ -94,12 +94,18 @@ Característica: Criação um Tópico/Fórum para discussão
    -----------------------------------------------------------------------    
   
 
-- Uma vez que, eu como administrador criando uma meta, um topico de discussão será criado automaticamente
-  - Funções do administrador para o topicos:
-   - liberar;
-   - travar/ bloquear;
-   - Moderar Postagens;
-    
+Complexidade = 3 - Caracteristica: Enviar convite (Observação criar funcionalidade de Aceitar convite e validar) 
+                    Eu como Membro, gerando um convite único,
+                    poderei convidar novos membros para a Mobilização;
+                   
+                   Cenário: Convidar novos integrantes
+                   Dado um Membro logado e estando na tela da mobilização
+                   Quando clicar no botão "convidar novo colaborador"
+                   Então aparecerá um link do convite
+                   Então o colaborador poderá copiar o link para ser compartilhado
+                   quando 
+________________________________________________________________________________________________________________________________
+
 - Eu como Membro, gerando um convite único, poderei convidar novos membros para a Mobilização;
 
 - Eu como Membro, ao visualizar um comentário posso avaliar como positivo ou negativo;
