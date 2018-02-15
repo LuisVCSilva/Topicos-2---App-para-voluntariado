@@ -19,14 +19,29 @@ Característica: Criar login
   - E exibirá uma mensagem que o usuário obteve sucesso 
   
 __________________________________________________________________________________________________________________________
-- Eu como membro quero autenticar no sistema para que eu possa realizar funções de membro
-  - Informações para autenticação:
-    - Email;
-    - Senha;
-  - Sucesso na autenticação:
-    - Redirecione para a página inicial como membro da mobilização;
-  - Falha na autenticação:
-    - Retorne a página de login;
+
+Complexidade = 1 
+
+Caracteristica: logar no sistema
+ Cenário:
+  - Dado um membro estando na página inicial
+  - Quando clicar em sign in
+  - E acessar a pagina de login
+  - E preencher o Email 
+  - E preencher a senha
+  - E Clicar no botão "sign in"
+  - Então será redirecionado para pagina inicial
+  - E exibi uma mensagem que o usuário obteve sucesso na autenticação
+  - Senão ele se manterá na tela de login
+  - E aparecerá uma mensagem informando que alguma informação está incorreta
+ 
+ Exemplo:
+ 
+ Página | Email           | Senha  | Próxima Página | IS_OK
+ Login  | exe.1@gmail.com | A123   | Inicial da Mob | TRUE
+ Login  | exe.1@gmail.com | A123   | Login          | FALSE
+ 
+ ________________________________________________________________________________________________________________________________
     
 - Eu como administrador quero direcionamento para uma página para cadastrar uma Mobilização
   - Informações para o cadastro de mobilização:
