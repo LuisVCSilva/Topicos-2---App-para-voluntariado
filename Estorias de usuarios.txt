@@ -4,43 +4,129 @@ Tipos de atores:
       /         \             |
 Colaborador    Admin      Observador
 
+Complexidade = 1 
 
-- Eu como membro quero autenticar no sistema para que eu possa realizar funções de membro
-  - Informações para autenticação:
-    - Email;
-    - Senha;
-  - Sucesso na autenticação:
-    - Redirecione para a página inicial como membro da mobilização;
-  - Falha na autenticação:
-    - Retorne a página de login;
+Característica: Criar login
+ Cenário:
+  - Dado um não membro estando na página inicial
+  - Quando clicar em “sign up”
+  - Então será redirecionado para página para realizar o Cadastro
+  - E preencher o campo de nome
+  - E preencher o campo de e-mail
+  - E preencher o campo de senha
+  - E Clicar no botão "sign up"
+  - Então será redirecionado para página inicial
+  - E exibirá uma mensagem que o usuário obteve sucesso 
+  
+__________________________________________________________________________________________________________________________
+
+Complexidade = 1 
+
+Caracteristica: logar no sistema
+ Cenário:
+  - Dado um membro estando na página inicial
+  - Quando clicar em sign in
+  - E acessar a pagina de login
+  - E preencher o Email 
+  - E preencher a senha
+  - E Clicar no botão "sign in"
+  - Então será redirecionado para pagina inicial
+  - E exibi uma mensagem que o usuário obteve sucesso na autenticação
+  - Senão ele se manterá na tela de login
+  - E aparecerá uma mensagem informando que alguma informação está incorreta
+ 
+ Exemplo:
+ 
+ Página | Email           | Senha  | Próxima Página | IS_OK
+ Login  | exe.1@gmail.com | A123   | Inicial da Mob | TRUE
+ Login  | exe.1@gmail.com | A123   | Login          | FALSE
+ 
+ ________________________________________________________________________________________________________________________________
     
-- Eu como administrador quero direcionamento para uma página para cadastrar uma Mobilização
-  - Informações para o cadastro de mobilização:
-    - Titulo;
-    - subtitulo;
-    - Descrição;
-    - Adição de uma ou mais metas/objetivos;
-      -informações para criação de Meta:
-        - Titulo;
-        - Descrição;
+Complexidade = 1 
+
+Característica: Alterar Mobilização
+ Cenário: 
+  - Dado que o administrador esteja logado 
+  - E na página da Mobilização,
+  - Quando clicar no perfil Admin
+  - Então ele é redirecionado para uma página de perfil do administrador
+  - Quando clica em “Editar Mobilização”
+  - E preencher Título
+  - E preencher subtitulo
+  - E preencher Descrição
+  - E de maneira opcional adicionar mais Metas da Mobilização
+  - E preenchendo o título e a descrição das Metas
+  - Então clicar no botão de “Alterar Mobilização”
+  - Então o administrador é direcionado para página inicial da mobilização
+  - E é exibida uma mensagem afirmando que as alterações foram feitas com sucesso.
+
+________________________________________________________________________________________________________________________________
     
-- Eu como administrador após a criação da Mobilização posso:
-  - Criar nova meta;
-  - Excluir meta;
+Complexidade = 1 
+
+Característica: Criação de novas Metas
+ Cenário:
+  - Dado que o administrador após a criação da Mobilização
+  - Quando clica no perfil Admin,
+  - E for redirecionado para a página de perfil do administrador
+  - E clicar em “Editar Mobilização”
+  - Quando clica no botão com o símbolo de "+"
+  - Então será acrescentado novos campos de textos para preencher
+  - E preencher com o Título para Meta
+  - E preencher com a Descrição para Meta
+  - Então clicar no botão de “Alterar Mobilização”
+  - Então o administrador é direcionado para página inicial da mobilização
+  - E é exibida uma mensagem afirmando que as alterações foram feitas com sucesso.
+
+________________________________________________________________________________________________________________________________
+    
+Complexidade = 2 
+
+Característica: Criação um Tópico/Fórum para discussão
+ Cenário:
+  - Dado que o administrador criou uma meta,
+  - Então um tópico de discussão será criado automaticamente pelo Sistema
+  - E administrador poderá liberar os tópicos
+  - E poderá travar/ bloquear os tópicos
+  - E poderá Moderar as Postagens os tópicos
+  
+   -----------------------------------------------------------------------    
   
 
-- Uma vez que, eu como administrador criando uma meta, um topico de discussão será criado automaticamente
-  - Funções do administrador para o topicos:
-   - liberar;
-   - travar/ bloquear;
-   - Moderar Postagens;
-    
-- Eu como Membro, gerando um convite único, poderei convidar novos membros para a Mobilização;
+Complexidade = 3 - Caracteristica: Enviar convite (Observação criar funcionalidade de Aceitar convite e validar) 
+                    Eu como Membro, gerando um convite único,
+                    poderei convidar novos membros para a Mobilização;
+                   
+                   Cenário: Convidar novos integrantes
+                   Dado um Membro logado e estando na tela da mobilização
+                   Quando clicar no botão "convidar novo colaborador"
+                   Então aparecerá um link do convite
+                   Então o colaborador poderá copiar o link para ser compartilhado
+                   quando 
+________________________________________________________________________________________________________________________________
 
-- Eu como Membro, ao visualizar um comentário posso avaliar como positivo ou negativo;
+Complexidade = 2 - Caracteristica: Avaliar Comentários
+                    Eu como Membro, ao visualizar um comentário posso avaliar como positivo ou negativo
 
-- Eu como Administrador, posso atribuir pontuação ao usuário de acordo com suas contribuições;
+                   Cenário: Foruns
+                   Dado um Membro logado e estando dentro do forum da Mobilização
+                   Quando o Membro escolher sua avaliação (Positiva ou Negativa) para aquele comentario
+                   Então o comentario receberá um ponto positivo ou um negativo
+                   
+ ________________________________________________________________________________________________________________________________
 
-- Eu como Membro, posso visualizar a pontuação dos Membros mais ativos.
+Complexidade = 2 - Caracteristica: Classificar Membros
+                    Eu como Administrador, posso atribuir pontuação ao usuário de acordo com suas contribuições
 
-- Aplicação precisa de uma classificação por meio de pontuação para motivar os  colaboradores.*
+                   Cenário: Dado o Administrador visualizando o topico de uma meta
+                   Quando visualizar um post de um Colaborador, aparecerá a opção de pontuar o post
+                   Então o Administrador poderá pontuar o post do Colaborador
+                   
+________________________________________________________________________________________________________________________________
+
+Complexidade = 2 - Eu como Membro, posso visualizar a pontuação dos Membros mais ativos.
+
+________________________________________________________________________________________________________________________________
+
+Complexidade = 3 - Aplicação precisa de uma classificação por meio de pontuação para motivar os colaboradores.*
