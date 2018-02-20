@@ -1,0 +1,6 @@
+        <ul>
+            <% @metas.each_with_index  do |meta, i| %>
+            <li><%= "Meta " + (i+1).to_s + ":" %> <a href= <%= "forum/"+meta["slug"] %> > <%= meta["name"] %> </a></li>
+            <% end %>
+        </ul>
+

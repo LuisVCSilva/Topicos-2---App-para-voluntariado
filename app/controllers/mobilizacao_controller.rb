@@ -32,7 +32,7 @@ class MobilizacaoController < ApplicationController
     data["en"]["brand"]["description"] = @descricao.to_s
    end
    File.open("#{Rails.root}/config/locales/en.yml", 'w') { |f| YAML.dump(data, f) }
-   redirect_to("/")
+   redirect_back(fallback_location: root_path)
   end
 
   def create

@@ -19,8 +19,12 @@ class MetasController < ApplicationController
    puts "Entrei no index"
   end
 
-  def delete
-   redirect_to("/")
+
+
+  def destroy
+    #Parameters: {authenticity_token,id}
+    @aux = Thredded::Messageboard.friendly_find!(params["id"]).destroy!
+    redirect_back(fallback_location: root_path)
   end
 
   def create

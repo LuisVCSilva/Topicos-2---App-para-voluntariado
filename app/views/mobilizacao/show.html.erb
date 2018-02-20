@@ -19,8 +19,9 @@
     <li><%= "Meta " + (i+1).to_s + ":" %>
 	<%= meta["name"] %></a> 
 	(<a href= <%= "/forum/messageboards/"+meta["slug"]+"/edit" %>> Editar </a>| 
-	<a href= <%= "/metas/delete/"+meta["slug"]%>>Excluir </a>) </li>
+	<a data-method="delete" href= <%= "/metas/"+meta["slug"]%>>Excluir </a>) </li>
     <% end %>
+
   </ul>
   <input type="button" value="Criar meta" onclick="window.location='/forum/messageboards/new'" />       
   <br>

@@ -1,9 +1,9 @@
 ---
 en:
   brand:
-    name: Teste
-    subtitle: Outro Teste
-    description: Testes são feitos para testar
+    name: Criança Esperança
+    subtitle: Uma boa ação pode mudar o mundo
+    description: Um programa da UNESCO
   common:
     time_ago: "%{time} atrás"
   nav:
