@@ -16,6 +16,8 @@
 
 
   <% end %>
+
+  <li>Karma: 0</li>
   <li><%= t 'thredded.users.user_since_html', time_ago: time_ago(user.created_at) %></li>
   <% if user_detail.last_seen_at %>
       <li><%= t 'thredded.users.last_active_html', time_ago: time_ago(user_detail.last_seen_at) %></li>
@@ -26,6 +28,7 @@
   <% if user_detail.posts_count > 0 %>
       <li><%= t 'thredded.users.posts_count', count: user_detail.posts_count %></li>
   <% end %>
+
 </ul>
 <% posts_page = Thredded.posts_page_view(
     scope: user.thredded_posts.order_newest_first.limit(5),

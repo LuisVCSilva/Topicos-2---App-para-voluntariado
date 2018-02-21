@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   resources :mobilizacao
    post "/mobilizacao/update" => "mobilizacao#update"
 
+  resources :karma
+   get "/karma/index" => "karma#index"
+
   resources :metas
    get "/metas/show" => "metas#show"
    get "/metas/delete" => "metas#delete"

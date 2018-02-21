@@ -3,10 +3,10 @@ en:
   brand:
     name: Criança Esperança
     subtitle: Uma boa ação pode mudar o mundo
-    description: O Criança Esperança é uma campanha nacional de mobilização social
+    description: 'O Criança Esperança é uma campanha nacional de mobilização social
       que busca a conscientização em prol dos direitos da criança e do adolescente,
       promovida pela Globo, inicialmente em parceria com a UNICEF e atualmente com
-      a UNESCO.
+      a UNESCO. '
   common:
     time_ago: "%{time} atrás"
   nav:

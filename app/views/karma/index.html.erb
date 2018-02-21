@@ -1,0 +1,19 @@
+<center><h1>Usuários mais ativos</h1></center>
+   <center>
+   <table border="1">
+   <% @scoreGeral.each_with_index  do |score, i| %>
+   <tr>
+      <td>
+      <%= (i+1).to_s %>
+      </td>
+      <td>
+         <% @aux = "<a href=/users/"+score["id"].to_s+">" + score["display_name"] + "</a>" %>
+         <%= @aux.html_safe %>
+      </td>
+      <td>
+      <%= score["posts_count"].to_s + " posts"%>
+      </td>
+   </tr>
+   <% end %>
+   </table>
+   </center>
