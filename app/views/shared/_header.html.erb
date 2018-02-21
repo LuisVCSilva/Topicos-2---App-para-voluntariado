@@ -11,7 +11,9 @@
         <%= link_to t('nav.sign_in'), main_app.new_user_session_path %>
     <% end %>
   </span>
+
   <a class="app-nav-logo" href="/"><%= image_tag( "logo.png") %></a>
+
   <div class="app-nav-theme">
     <span class="app-nav-text"><%= t 'nav.theme' %>:</span>
     <ul>
@@ -29,4 +31,16 @@
       <% end %>
     </ul>
   </div>
+<span>
+</span>
+</br>
+<span>
+<center>
+<% @progresso = ActiveRecord::Base.connection.execute("SELECT * FROM thredded_messageboards").to_a %>
+Progresso da meta <progress value=<%= @progresso.map{|query| query["name"] if query["locked"]==true}.compact.length %> max=<%= @progresso.length%>>
+
+</progress>
+</center>
+</span>
+</br>
 </header>

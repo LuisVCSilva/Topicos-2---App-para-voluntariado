@@ -15,7 +15,7 @@ class MobilizacaoController < ApplicationController
   end
 
   def update
-
+   @metas = ActiveRecord::Base.connection.execute("SELECT * FROM thredded_messageboards").map{|meta| meta["name"]}
    #Meta.create(meta_params)
    #puts "Entrei no index"
    data = YAML.load_file("#{Rails.root}/config/locales/en.yml")
