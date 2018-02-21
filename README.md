@@ -15,6 +15,6 @@ Forkado aqui: https://github.com/LuisVCSilva/thredded_create_app
 # TODO IMEDIATO
 =======
 TODO IMEDIATO
- - Excluir Metas
+ - Exibir metas na página inicial -> Arrumar Partial de /metas/index em /
  - Sistema de convites
  - Adicionar sistema de pontuação
