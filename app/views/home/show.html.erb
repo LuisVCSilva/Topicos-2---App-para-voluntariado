@@ -3,7 +3,17 @@
 <p>
 <%= t 'brand.description' %>
 </p>
+Metas:
+
+<% @progresso = ActiveRecord::Base.connection.execute("SELECT * FROM thredded_messageboards").to_a %>
+
+<ul style="list-style: none;">
+   <% @progresso.each_with_index  do |meta, i| %>
+   <li><%= meta["locked"] ? inline_svg('thredded/metaFinalizada.svg', class: 'thredded--messageboard--meta--icon') : inline_svg('thredded/metaPendente.svg', class: 'thredded--messageboard--meta--icon')%> <%= "Meta " + (i+1).to_s + ": " %><a href= <%= "forum/"+meta["slug"] %>><%= meta["name"] %></a></li>
+   <% end %>
+</ul>
+
 
 <% unless Rails.env.production? %>
-
+<%=  %>
 <% end %>
