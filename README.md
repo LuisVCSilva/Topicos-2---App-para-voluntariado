@@ -17,3 +17,5 @@ TODO IMEDIATO
  - Adicionar pontuação por usuário (karma points)
  - Sistema de convites
  - Integrar login com API Google/Facebook/etc
+
+UPDATE users SET admin = true WHERE id=1

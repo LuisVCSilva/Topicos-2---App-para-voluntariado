@@ -1,6 +1,8 @@
 <header role="banner" class="app-header">
   <span class="app-nav-auth">
     <% if current_user %>
+        <%= link_to t('karma'), "/karma/" %>		
+        |
 		<%= link_to t('nav.forums'), thredded.root_path %>		
 		|
         <%= link_to current_user.display_name, user_path(current_user) %>
