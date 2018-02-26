@@ -3,6 +3,7 @@ Tipos de atores:
          Membro -----------Não-Membro
       /         \             |
 Colaborador    Admin      Observador
+___________________________________________________________________________________________________________________________
 
 Complexidade = 1 
 
@@ -17,8 +18,7 @@ Característica: Criar login
   - E Clicar no botão "sign up"
   - Então será redirecionado para página inicial
   - E exibirá uma mensagem que o usuário obteve sucesso 
-  
-__________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________
 
 Complexidade = 1 
 
@@ -90,11 +90,9 @@ Característica: Criação um Tópico/Fórum para discussão
   - E administrador poderá liberar os tópicos
   - E poderá travar/ bloquear os tópicos
   - E poderá Moderar as Postagens os tópicos
-  
-   -----------------------------------------------------------------------    
-  
+________________________________________________________________________________________________________________________________
 
-Complexidade = 3 - Caracteristica: Enviar convite (Observação criar funcionalidade de Aceitar convite e validar) 
+Complexidade = 3 - Caracteristica: Enviar convite 
                     Eu como Membro, gerando um convite único,
                     poderei convidar novos membros para a Mobilização;
                    
@@ -103,7 +101,17 @@ Complexidade = 3 - Caracteristica: Enviar convite (Observação criar funcionali
                    Quando clicar no botão "convidar novo colaborador"
                    Então aparecerá um link do convite
                    Então o colaborador poderá copiar o link para ser compartilhado
-                   quando 
+________________________________________________________________________________________________________________________________
+
+Complexidade = 3 - Caracteristica: validação e aceitação do convite
+                   Eu como não-membro, clicando no link de convite único, 
+                   serei direcionado para a tela de cadastro de usuario;
+
+                   Cenário: aceitar convite
+                   Dado um não-membro clicando no link do convite único,
+                   Então o link será validade pelo sistema
+                   Então o não-membro será redirecionado para a tela de cadastro de usuario onde poderá criar seu perfil
+                   Então finalizando e salvando o não-membro se torna membro da mobilização e é direcionado para a mobilização.
 ________________________________________________________________________________________________________________________________
 
 Complexidade = 2 - Caracteristica: Avaliar Comentários
@@ -121,8 +129,7 @@ Complexidade = 2 - Caracteristica: Classificar Membros
 
                    Cenário: Dado o Administrador visualizando o topico de uma meta
                    Quando visualizar um post de um Colaborador, aparecerá a opção de pontuar o post
-                   Então o Administrador poderá pontuar o post do Colaborador
-                   
+                   Então o Administrador poderá pontuar o post do Colaborador              
 ________________________________________________________________________________________________________________________________
 
 Complexidade = 2 - Eu como Membro, posso visualizar a pontuação dos Membros mais ativos.
