@@ -132,8 +132,11 @@ Complexidade = 2 - Caracteristica: Classificar Membros
                    Então o Administrador poderá pontuar o post do Colaborador              
 ________________________________________________________________________________________________________________________________
 
-Complexidade = 2 - Eu como Membro, posso visualizar a pontuação dos Membros mais ativos.
+Complexidade = 2 - Caracteristica: Visualizar pontos dos membros
+                    Eu como Membro, posso visualizar a pontuação dos Membros mais ativos.
 
+                    Cenário: Dados que um membro esta na tela da mobilização
+                    então terá uma lista com os membros com as melhores mais altas
 ________________________________________________________________________________________________________________________________
 
 Complexidade = 3 - Aplicação precisa de uma classificação por meio de pontuação para motivar os colaboradores.*
