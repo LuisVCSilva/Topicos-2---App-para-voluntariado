@@ -139,4 +139,63 @@ Complexidade = 2 - Caracteristica: Visualizar pontos dos membros
                     então terá uma lista com os membros com as melhores mais altas
 ________________________________________________________________________________________________________________________________
 
+Complexidade = 3
+
+Característica: Gerenciamento de convites
+ Cenário:
+  - Dado um membro estando na página inicial
+  - Quando clicar em {nomeDoPerfil}
+  - Então será redirecionado para página de seu respectivo perfil
+  - E quando clicar no link "Convites"
+  - Então será redirecionado para página dos convites respectivos a seu perfil
+  - E os seguintes itens devem ser listados:
+   -> Lista de convites emitidos;
+   -> Data da emissão do convite;
+   -> Link do convite emitido;
+   -> Status do convite;
+   -> Destinatário do convite;
+___________________________________________________________________________________________________________________________
+
+Complexidade = 1 
+
+Característica: Visualizar meu perfil
+ Cenário:
+  - Dado um membro estando na página inicial
+  - Quando clicar em {nomeDoPerfil}
+  - Então será redirecionado para página de seu respectivo perfil
+  - E exibirá uma lista de itens composta por:
+   -> Pontuação karma;
+   -> Idade da conta;
+   -> Quantidade de tópicos criados;
+   -> Quantidade de publicações;
+   -> Linha do tempo de publicações;
+___________________________________________________________________________________________________________________________
+
+Complexidade = 1 
+
+Característica: Visualizar highscores
+ Cenário:
+  - Dado um membro estando em qualquer página do sistema
+  - Quando clicar em “karma”
+  - Então será redirecionado para página de usuários mais ativos
+  - E exibirá uma tabela listando os usuários que mais contribuiram na mobilização.
+____________________________________________________________________________________________________________________________
+
+Complexidade = 2 
+
+Característica: Atribuir pontuação a membro
+ Cenário:
+  - Dado um membro estando logado como administrador
+  - Quando clicar na página da meta "A"
+  - Então será redirecionado para a página da meta "A"
+  - Quando clicar em um tópico "X" pertencente a meta "A"
+  - Então será redirecionado para a página do tópico "X" da meta "A"
+  - Quando clicar em opções de post
+  - E Clicar no botão "Atribuir pontuação"
+  - Então será redirecionado a uma página de atribuição de pontos correspondente ao post
+  - E preencher o campo de quantidade de pontos
+  - E clicar no botão "Ok"
+  - Então o administrador será redirecionado para o perfil do usuário que recebeu a pontuação
+____________________________________________________________________________________________________________________________
+
 Complexidade = 3 - Aplicação precisa de uma classificação por meio de pontuação para motivar os colaboradores.*
